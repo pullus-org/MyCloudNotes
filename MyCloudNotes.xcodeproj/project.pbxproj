@@ -1,0 +1,1535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA0B48031F9CFAAC00F6D6CE /* Synchronizer+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B48021F9CFAAC00F6D6CE /* Synchronizer+Sync.swift */; };
+		CA11F4A720011FA3006E38F8 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7AD631F757EB5008B2224 /* UserDefaults+Keys.swift */; };
+		CA11F4A820011FA3006E38F8 /* RemoteNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECCA01F7E98030074A83C /* RemoteNote.swift */; };
+		CA11F4A920011FA3006E38F8 /* CloudNotesService-Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771BB1F8CA4E200FFC1BB /* CloudNotesService-Notification.swift */; };
+		CA11F4AA20011FA3006E38F8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB33D3D1F6FD94F00838773 /* Note.swift */; };
+		CA11F4AB20011FA3006E38F8 /* ANote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECC9E1F7E97740074A83C /* ANote.swift */; };
+		CA11F4AC20011FA3006E38F8 /* NSManagedObjectContext+trySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECF1A1F8971C600D800DB /* NSManagedObjectContext+trySave.swift */; };
+		CA11F4AD20011FA3006E38F8 /* CloudNotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7AD611F757CB4008B2224 /* CloudNotesService.swift */; };
+		CA11F4AE20011FA3006E38F8 /* Synchronizer+Instantly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF105081F9CDE0A007BDEAC /* Synchronizer+Instantly.swift */; };
+		CA11F4AF20011FA3006E38F8 /* DataRequest+JsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3428481FAA02420063A1B4 /* DataRequest+JsonObject.swift */; };
+		CA11F4B020011FA3006E38F8 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771C31F8CABFA00FFC1BB /* ErrorHandler.swift */; };
+		CA11F4B120011FA3006E38F8 /* SaveAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E0A071F7401E300024D41 /* SaveAlert.swift */; };
+		CA11F4B220011FA3006E38F8 /* ViewController+StatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D7DE1F90FF9A00090D7A /* ViewController+StatusIndicator.swift */; };
+		CA11F4B320011FA3006E38F8 /* NSManagedObjectContext+fetchAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AE4DA1F81143C0050A1CB /* NSManagedObjectContext+fetchAll.swift */; };
+		CA11F4B420011FA3006E38F8 /* ViewController-Visualisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE454881F8D10FC006411F6 /* ViewController-Visualisation.swift */; };
+		CA11F4B520011FA3006E38F8 /* CloudNotesService+AuthenticationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771BF1F8CA76C00FFC1BB /* CloudNotesService+AuthenticationAdapter.swift */; };
+		CA11F4B620011FA3006E38F8 /* PDKeychainBindings+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAEEF6B1F7845A100F145A0 /* PDKeychainBindings+Keys.swift */; };
+		CA11F4B720011FA3006E38F8 /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF2305D1F79711300766B52 /* Synchronizer.swift */; };
+		CA11F4B820011FA3006E38F8 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771C11F8CABC600FFC1BB /* Procedure.swift */; };
+		CA11F4B920011FA3006E38F8 /* CloudNotesService+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771BD1F8CA70700FFC1BB /* CloudNotesService+Request.swift */; };
+		CA11F4BA20011FA3006E38F8 /* CloudNotesService-Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECC5F71F8CC04400BF7593 /* CloudNotesService-Note.swift */; };
+		CA11F4BB20011FA3006E38F8 /* CloudNotesService+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771B91F8CA36900FFC1BB /* CloudNotesService+Failure.swift */; };
+		CA11F4BC20011FA3006E38F8 /* CloudNotesService+JsonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771AD1F8CA33800FFC1BB /* CloudNotesService+JsonKey.swift */; };
+		CA11F4BD20011FA3006E38F8 /* Deletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED47A1F87C90200A45FE7 /* Deletion.swift */; };
+		CA11F4BE20011FA3006E38F8 /* Synchronizer+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771C51F8CAF0D00FFC1BB /* Synchronizer+Failure.swift */; };
+		CA11F4BF20011FA3006E38F8 /* MyCloudNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A6F0A1F717A4500C348FC /* MyCloudNotes.swift */; };
+		CA11F4C020011FA3006E38F8 /* Sequence+mapToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8006D1F7E711C000E3F50 /* Sequence+mapToDictionary.swift */; };
+		CA11F4C120011FA3006E38F8 /* Set+includes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECF111F8964CB00D800DB /* Set+includes.swift */; };
+		CA11F4C220011FA3006E38F8 /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = CA99D9F51F7568AE0004875C /* PDKeychainBindings.m */; };
+		CA11F4C320011FA3006E38F8 /* CloudNotesService-RemoteNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECC5F51F8CB6B600BF7593 /* CloudNotesService-RemoteNote.swift */; };
+		CA11F4C420011FA3006E38F8 /* Synchronizer+Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF104FC1F9CD7DA007BDEAC /* Synchronizer+Auto.swift */; };
+		CA11F4C520011FA3006E38F8 /* MyCloudNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0291F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodeld */; };
+		CA11F4C620011FA3006E38F8 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1FBAE1FAA3313001AFF41 /* WindowController.swift */; };
+		CA11F4C720011FA3006E38F8 /* Array+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AE4D21F80FAB50050A1CB /* Array+Set.swift */; };
+		CA11F4C820011FA3006E38F8 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E8651F829EC300761948 /* PreferencesController.swift */; };
+		CA11F4C920011FA3006E38F8 /* CloudNotesService+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D7EC1F9109F400090D7A /* CloudNotesService+Notification.swift */; };
+		CA11F4CA20011FA3006E38F8 /* Synchronizer+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B48021F9CFAAC00F6D6CE /* Synchronizer+Sync.swift */; };
+		CA11F4CB20011FA3006E38F8 /* Url+HumanReadableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26E1BA1F8A8F1F00D79D62 /* Url+HumanReadableString.swift */; };
+		CA11F4CC20011FA3006E38F8 /* MarklightTextProcessor+set.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA605F1E1F8D2E32008DA3F4 /* MarklightTextProcessor+set.swift */; };
+		CA11F4CD20011FA3006E38F8 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA99D9F71F7568AE0004875C /* PDKeychainBindingsController.m */; };
+		CA11F4CE20011FA3006E38F8 /* Dictionary+getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA226AA51F75B96A004DF24E /* Dictionary+getter.swift */; };
+		CA11F4CF20011FA3006E38F8 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0551F6FA14E00E2DFC0 /* DateTransformer.swift */; };
+		CA11F4D020011FA3006E38F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0271F6FA0D800E2DFC0 /* ViewController.swift */; };
+		CA11F4D120011FA3006E38F8 /* ViewController+Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D7EA1F9100A100090D7A /* ViewController+Synchronization.swift */; };
+		CA11F4D220011FA3006E38F8 /* NSSavePanel+ExportNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26E1B11F8A884F00D79D62 /* NSSavePanel+ExportNote.swift */; };
+		CA11F4D320011FA3006E38F8 /* DataRequest+prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D4A701F8C062D005F723C /* DataRequest+prelude.swift */; };
+		CA11F4D420011FA3006E38F8 /* NSLock+perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA266F41F8BE0350050EC3F /* NSLock+perform.swift */; };
+		CA11F4D520011FA3006E38F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0251F6FA0D800E2DFC0 /* AppDelegate.swift */; };
+		CA11F4D620011FA3006E38F8 /* String+firstLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD95E0C1F71A8D9006E5D61 /* String+firstLine.swift */; };
+		CA11F4D720011FA3006E38F8 /* NSOpenPanel+ImportNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26E1BC1F8A96E600D79D62 /* NSOpenPanel+ImportNote.swift */; };
+		CA11F4D820011FA3006E38F8 /* CloudNotesService+ReadableRemoteNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C33B1F78198E00600E39 /* CloudNotesService+ReadableRemoteNote.swift */; };
+		CA11F4DA20011FA3006E38F8 /* Marklight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB4BC121F8AAD4000EE7539 /* Marklight.framework */; };
+		CA11F4DB20011FA3006E38F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC7092E1F84236100891817 /* Alamofire.framework */; };
+		CA11F4DD20011FA3006E38F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA94A02C1F6FA0D800E2DFC0 /* Assets.xcassets */; };
+		CA11F4DE20011FA3006E38F8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA94A0571F6FA20000E2DFC0 /* Credits.rtf */; };
+		CA11F4DF20011FA3006E38F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA94A0531F6FA11D00E2DFC0 /* Main.storyboard */; };
+		CA11F4E220011FA3006E38F8 /* Marklight.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAB4BC121F8AAD4000EE7539 /* Marklight.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA11F4E320011FA3006E38F8 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAC7092E1F84236100891817 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA1A6F0B1F717A4500C348FC /* MyCloudNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A6F0A1F717A4500C348FC /* MyCloudNotes.swift */; };
+		CA1ED47B1F87C90200A45FE7 /* Deletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ED47A1F87C90200A45FE7 /* Deletion.swift */; };
+		CA226AA61F75B96A004DF24E /* Dictionary+getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA226AA51F75B96A004DF24E /* Dictionary+getter.swift */; };
+		CA26E1B21F8A884F00D79D62 /* NSSavePanel+ExportNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26E1B11F8A884F00D79D62 /* NSSavePanel+ExportNote.swift */; };
+		CA26E1BB1F8A8F1F00D79D62 /* Url+HumanReadableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26E1BA1F8A8F1F00D79D62 /* Url+HumanReadableString.swift */; };
+		CA26E1BD1F8A96E600D79D62 /* NSOpenPanel+ImportNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26E1BC1F8A96E600D79D62 /* NSOpenPanel+ImportNote.swift */; };
+		CA3428491FAA02420063A1B4 /* DataRequest+JsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3428481FAA02420063A1B4 /* DataRequest+JsonObject.swift */; };
+		CA3AE4D31F80FAB50050A1CB /* Array+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AE4D21F80FAB50050A1CB /* Array+Set.swift */; };
+		CA3AE4DB1F81143C0050A1CB /* NSManagedObjectContext+fetchAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3AE4DA1F81143C0050A1CB /* NSManagedObjectContext+fetchAll.swift */; };
+		CA3D4A711F8C062D005F723C /* DataRequest+prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D4A701F8C062D005F723C /* DataRequest+prelude.swift */; };
+		CA4E69E320852930003E4481 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E69E220852930003E4481 /* Window.swift */; };
+		CA53E8661F829EC300761948 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E8651F829EC300761948 /* PreferencesController.swift */; };
+		CA54E16D1F950C2800F5B30C /* Marklight.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAB4BC121F8AAD4000EE7539 /* Marklight.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA54E1751F950C3000F5B30C /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAC7092E1F84236100891817 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA59F6462064F803007142A8 /* NSManagedContext+performAndReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA59F6452064F803007142A8 /* NSManagedContext+performAndReturn.swift */; };
+		CA59F6512064F878007142A8 /* NSManagedContext+performAndReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA59F6452064F803007142A8 /* NSManagedContext+performAndReturn.swift */; };
+		CA5E0A081F7401E300024D41 /* SaveAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E0A071F7401E300024D41 /* SaveAlert.swift */; };
+		CA605F1F1F8D2E32008DA3F4 /* MarklightTextProcessor+set.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA605F1E1F8D2E32008DA3F4 /* MarklightTextProcessor+set.swift */; };
+		CA81C33C1F78198E00600E39 /* CloudNotesService+ReadableRemoteNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81C33B1F78198E00600E39 /* CloudNotesService+ReadableRemoteNote.swift */; };
+		CA8ECC9F1F7E97740074A83C /* ANote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECC9E1F7E97740074A83C /* ANote.swift */; };
+		CA8ECCA11F7E98030074A83C /* RemoteNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECCA01F7E98030074A83C /* RemoteNote.swift */; };
+		CA94A0261F6FA0D800E2DFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0251F6FA0D800E2DFC0 /* AppDelegate.swift */; };
+		CA94A0281F6FA0D800E2DFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0271F6FA0D800E2DFC0 /* ViewController.swift */; };
+		CA94A02B1F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0291F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodeld */; };
+		CA94A02D1F6FA0D800E2DFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA94A02C1F6FA0D800E2DFC0 /* Assets.xcassets */; };
+		CA94A03B1F6FA0D800E2DFC0 /* MyCloudNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A03A1F6FA0D800E2DFC0 /* MyCloudNotesTests.swift */; };
+		CA94A0461F6FA0D800E2DFC0 /* MyCloudNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0451F6FA0D800E2DFC0 /* MyCloudNotesUITests.swift */; };
+		CA94A0541F6FA11D00E2DFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA94A0531F6FA11D00E2DFC0 /* Main.storyboard */; };
+		CA94A0561F6FA14E00E2DFC0 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA94A0551F6FA14E00E2DFC0 /* DateTransformer.swift */; };
+		CA94A0581F6FA20000E2DFC0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA94A0571F6FA20000E2DFC0 /* Credits.rtf */; };
+		CA986591207FD5D40087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA986590207FD5D40087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift */; };
+		CA98659C207FD9D60087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA986590207FD5D40087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift */; };
+		CA99D9F81F7568AE0004875C /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = CA99D9F51F7568AE0004875C /* PDKeychainBindings.m */; };
+		CA99D9F91F7568AE0004875C /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA99D9F71F7568AE0004875C /* PDKeychainBindingsController.m */; };
+		CAA266F51F8BE0350050EC3F /* NSLock+perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA266F41F8BE0350050EC3F /* NSLock+perform.swift */; };
+		CAAEEF6C1F7845A100F145A0 /* PDKeychainBindings+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAEEF6B1F7845A100F145A0 /* PDKeychainBindings+Keys.swift */; };
+		CAB33D3E1F6FD94F00838773 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB33D3D1F6FD94F00838773 /* Note.swift */; };
+		CAB4BC171F8AAD6400EE7539 /* Marklight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB4BC121F8AAD4000EE7539 /* Marklight.framework */; };
+		CAB771AE1F8CA33800FFC1BB /* CloudNotesService+JsonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771AD1F8CA33800FFC1BB /* CloudNotesService+JsonKey.swift */; };
+		CAB771BA1F8CA36900FFC1BB /* CloudNotesService+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771B91F8CA36900FFC1BB /* CloudNotesService+Failure.swift */; };
+		CAB771BC1F8CA4E200FFC1BB /* CloudNotesService-Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771BB1F8CA4E200FFC1BB /* CloudNotesService-Notification.swift */; };
+		CAB771BE1F8CA70700FFC1BB /* CloudNotesService+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771BD1F8CA70700FFC1BB /* CloudNotesService+Request.swift */; };
+		CAB771C01F8CA76C00FFC1BB /* CloudNotesService+AuthenticationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771BF1F8CA76C00FFC1BB /* CloudNotesService+AuthenticationAdapter.swift */; };
+		CAB771C21F8CABC600FFC1BB /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771C11F8CABC600FFC1BB /* Procedure.swift */; };
+		CAB771C41F8CABFA00FFC1BB /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771C31F8CABFA00FFC1BB /* ErrorHandler.swift */; };
+		CAB771C61F8CAF0D00FFC1BB /* Synchronizer+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB771C51F8CAF0D00FFC1BB /* Synchronizer+Failure.swift */; };
+		CAC1FBAF1FAA3313001AFF41 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1FBAE1FAA3313001AFF41 /* WindowController.swift */; };
+		CAC7093A1F84237B00891817 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC7092E1F84236100891817 /* Alamofire.framework */; };
+		CACECF121F8964CB00D800DB /* Set+includes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECF111F8964CB00D800DB /* Set+includes.swift */; };
+		CACECF1B1F8971C600D800DB /* NSManagedObjectContext+trySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACECF1A1F8971C600D800DB /* NSManagedObjectContext+trySave.swift */; };
+		CAD95E0D1F71A8D9006E5D61 /* String+firstLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD95E0C1F71A8D9006E5D61 /* String+firstLine.swift */; };
+		CAE454891F8D10FC006411F6 /* ViewController-Visualisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE454881F8D10FC006411F6 /* ViewController-Visualisation.swift */; };
+		CAECC5F61F8CB6B600BF7593 /* CloudNotesService-RemoteNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECC5F51F8CB6B600BF7593 /* CloudNotesService-RemoteNote.swift */; };
+		CAECC5F81F8CC04400BF7593 /* CloudNotesService-Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECC5F71F8CC04400BF7593 /* CloudNotesService-Note.swift */; };
+		CAF0D7DF1F90FF9A00090D7A /* ViewController+StatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D7DE1F90FF9A00090D7A /* ViewController+StatusIndicator.swift */; };
+		CAF0D7EB1F9100A100090D7A /* ViewController+Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D7EA1F9100A100090D7A /* ViewController+Synchronization.swift */; };
+		CAF0D7ED1F9109F400090D7A /* CloudNotesService+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D7EC1F9109F400090D7A /* CloudNotesService+Notification.swift */; };
+		CAF104FD1F9CD7DA007BDEAC /* Synchronizer+Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF104FC1F9CD7DA007BDEAC /* Synchronizer+Auto.swift */; };
+		CAF105091F9CDE0A007BDEAC /* Synchronizer+Instantly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF105081F9CDE0A007BDEAC /* Synchronizer+Instantly.swift */; };
+		CAF2305E1F79711300766B52 /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF2305D1F79711300766B52 /* Synchronizer.swift */; };
+		CAF7AD621F757CB4008B2224 /* CloudNotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7AD611F757CB4008B2224 /* CloudNotesService.swift */; };
+		CAF7AD641F757EB5008B2224 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7AD631F757EB5008B2224 /* UserDefaults+Keys.swift */; };
+		CAF8006E1F7E711C000E3F50 /* Sequence+mapToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8006D1F7E711C000E3F50 /* Sequence+mapToDictionary.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA11F4A320011FA3006E38F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 500DC53C1F1F473300FE8C3E;
+			remoteInfo = "Marklight macOS";
+		};
+		CA11F4A520011FA3006E38F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DD67C0A1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		CA94A0371F6FA0D800E2DFC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA94A01A1F6FA0D800E2DFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA94A0211F6FA0D800E2DFC0;
+			remoteInfo = MyCloudNotes;
+		};
+		CA94A0421F6FA0D800E2DFC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA94A01A1F6FA0D800E2DFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA94A0211F6FA0D800E2DFC0;
+			remoteInfo = MyCloudNotes;
+		};
+		CAB4BC0D1F8AAD4000EE7539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95C46D681C33E11A0070AEDC;
+			remoteInfo = Marklight;
+		};
+		CAB4BC0F1F8AAD4000EE7539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95C46D721C33E11A0070AEDC;
+			remoteInfo = MarklightTests;
+		};
+		CAB4BC111F8AAD4000EE7539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 500DC53D1F1F473300FE8C3E;
+			remoteInfo = "Marklight macOS";
+		};
+		CAB4BC131F8AAD4000EE7539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 500DC5451F1F473300FE8C3E;
+			remoteInfo = "Marklight macOSTests";
+		};
+		CAB4BC151F8AAD5900EE7539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 500DC53C1F1F473300FE8C3E;
+			remoteInfo = "Marklight macOS";
+		};
+		CAC709291F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		CAC7092B1F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		CAC7092D1F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		CAC7092F1F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		CAC709311F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		CAC709331F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		CAC709351F84236100891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		CAC709371F84237200891817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DD67C0A1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		CAF47A6D20654A31009C2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA94A01A1F6FA0D800E2DFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA94A0211F6FA0D800E2DFC0;
+			remoteInfo = "MyCloudNotes (CustomSSL)";
+		};
+		CAF47A6F20654A31009C2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA94A01A1F6FA0D800E2DFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA11F4A120011FA3006E38F8;
+			remoteInfo = MyCloudNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA11F4E120011FA3006E38F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA11F4E220011FA3006E38F8 /* Marklight.framework in CopyFiles */,
+				CA11F4E320011FA3006E38F8 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6887D81F756460009E2B11 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA54E16D1F950C2800F5B30C /* Marklight.framework in CopyFiles */,
+				CA54E1751F950C3000F5B30C /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA0B48021F9CFAAC00F6D6CE /* Synchronizer+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Synchronizer+Sync.swift"; sourceTree = "<group>"; };
+		CA11F4E720011FA3006E38F8 /* MyCloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1A6F0A1F717A4500C348FC /* MyCloudNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCloudNotes.swift; sourceTree = "<group>"; };
+		CA1ED47A1F87C90200A45FE7 /* Deletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deletion.swift; sourceTree = "<group>"; };
+		CA226AA51F75B96A004DF24E /* Dictionary+getter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+getter.swift"; sourceTree = "<group>"; };
+		CA260A8C20054CAC00B2A98D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		CA26E1B11F8A884F00D79D62 /* NSSavePanel+ExportNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSSavePanel+ExportNote.swift"; sourceTree = "<group>"; };
+		CA26E1BA1F8A8F1F00D79D62 /* Url+HumanReadableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Url+HumanReadableString.swift"; sourceTree = "<group>"; };
+		CA26E1BC1F8A96E600D79D62 /* NSOpenPanel+ImportNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSOpenPanel+ImportNote.swift"; sourceTree = "<group>"; };
+		CA3428481FAA02420063A1B4 /* DataRequest+JsonObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+JsonObject.swift"; sourceTree = "<group>"; };
+		CA3AE4D21F80FAB50050A1CB /* Array+Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Set.swift"; sourceTree = "<group>"; };
+		CA3AE4DA1F81143C0050A1CB /* NSManagedObjectContext+fetchAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+fetchAll.swift"; sourceTree = "<group>"; };
+		CA3D4A701F8C062D005F723C /* DataRequest+prelude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+prelude.swift"; sourceTree = "<group>"; };
+		CA4E69E220852930003E4481 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		CA52F1B01F98C9E4005CD9E6 /* MyCloudNotes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyCloudNotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		CA53E8651F829EC300761948 /* PreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
+		CA59F6452064F803007142A8 /* NSManagedContext+performAndReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedContext+performAndReturn.swift"; sourceTree = "<group>"; };
+		CA5E0A071F7401E300024D41 /* SaveAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAlert.swift; sourceTree = "<group>"; };
+		CA605F1E1F8D2E32008DA3F4 /* MarklightTextProcessor+set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarklightTextProcessor+set.swift"; sourceTree = "<group>"; };
+		CA7A8E061F90F42A003CC47A /* MyCloudNotes.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MyCloudNotes.svg; sourceTree = "<group>"; };
+		CA81C33B1F78198E00600E39 /* CloudNotesService+ReadableRemoteNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService+ReadableRemoteNote.swift"; sourceTree = "<group>"; };
+		CA8ECC9E1F7E97740074A83C /* ANote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANote.swift; sourceTree = "<group>"; };
+		CA8ECCA01F7E98030074A83C /* RemoteNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNote.swift; sourceTree = "<group>"; };
+		CA94A0221F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyCloudNotes (CustomSSL).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA94A0251F6FA0D800E2DFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA94A0271F6FA0D800E2DFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA94A02A1F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCloudNotes.xcdatamodel; sourceTree = "<group>"; };
+		CA94A02C1F6FA0D800E2DFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA94A0311F6FA0D800E2DFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA94A0361F6FA0D800E2DFC0 /* MyCloudNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCloudNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA94A03A1F6FA0D800E2DFC0 /* MyCloudNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCloudNotesTests.swift; sourceTree = "<group>"; };
+		CA94A03C1F6FA0D800E2DFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA94A0411F6FA0D800E2DFC0 /* MyCloudNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCloudNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA94A0451F6FA0D800E2DFC0 /* MyCloudNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCloudNotesUITests.swift; sourceTree = "<group>"; };
+		CA94A0471F6FA0D800E2DFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA94A0531F6FA11D00E2DFC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA94A0551F6FA14E00E2DFC0 /* DateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransformer.swift; sourceTree = "<group>"; };
+		CA94A0571F6FA20000E2DFC0 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		CA986590207FD5D40087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+StatusOfSynchronizationMenuItem.swift"; sourceTree = "<group>"; };
+		CA99D9F41F7568AE0004875C /* PDKeychainBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindings.h; sourceTree = "<group>"; };
+		CA99D9F51F7568AE0004875C /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
+		CA99D9F61F7568AE0004875C /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
+		CA99D9F71F7568AE0004875C /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
+		CAA266F41F8BE0350050EC3F /* NSLock+perform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+perform.swift"; sourceTree = "<group>"; };
+		CAA2E39B205FDD2000703C6A /* MyCloudNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyCloudNotes.entitlements; sourceTree = "<group>"; };
+		CAA2E39E205FE58600703C6A /* Info-CustomSSL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-CustomSSL.plist"; sourceTree = "<group>"; };
+		CAAEEF6B1F7845A100F145A0 /* PDKeychainBindings+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDKeychainBindings+Keys.swift"; sourceTree = "<group>"; };
+		CAB33D3D1F6FD94F00838773 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Marklight.xcodeproj; path = Libraries/Marklight/Marklight.xcodeproj; sourceTree = "<group>"; };
+		CAB771AD1F8CA33800FFC1BB /* CloudNotesService+JsonKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService+JsonKey.swift"; sourceTree = "<group>"; };
+		CAB771B91F8CA36900FFC1BB /* CloudNotesService+Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService+Failure.swift"; sourceTree = "<group>"; };
+		CAB771BB1F8CA4E200FFC1BB /* CloudNotesService-Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService-Notification.swift"; sourceTree = "<group>"; };
+		CAB771BD1F8CA70700FFC1BB /* CloudNotesService+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService+Request.swift"; sourceTree = "<group>"; };
+		CAB771BF1F8CA76C00FFC1BB /* CloudNotesService+AuthenticationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService+AuthenticationAdapter.swift"; sourceTree = "<group>"; };
+		CAB771C11F8CABC600FFC1BB /* Procedure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure.swift; sourceTree = "<group>"; };
+		CAB771C31F8CABFA00FFC1BB /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		CAB771C51F8CAF0D00FFC1BB /* Synchronizer+Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Synchronizer+Failure.swift"; sourceTree = "<group>"; };
+		CABC01511F97B274001CD790 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		CABC428E1F89888900F61DA9 /* Star-Filled.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Star-Filled.svg"; sourceTree = "<group>"; };
+		CABC42961F89888900F61DA9 /* Star-Empty.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Star-Empty.svg"; sourceTree = "<group>"; };
+		CAC1FBAE1FAA3313001AFF41 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		CAC4D3D61F8E3EDA0076ED56 /* Error.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Error.svg; sourceTree = "<group>"; };
+		CAC709181F84236100891817 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Libraries/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		CACECF111F8964CB00D800DB /* Set+includes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+includes.swift"; sourceTree = "<group>"; };
+		CACECF1A1F8971C600D800DB /* NSManagedObjectContext+trySave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+trySave.swift"; sourceTree = "<group>"; };
+		CAD95E0C1F71A8D9006E5D61 /* String+firstLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+firstLine.swift"; sourceTree = "<group>"; };
+		CAE454881F8D10FC006411F6 /* ViewController-Visualisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-Visualisation.swift"; sourceTree = "<group>"; };
+		CAECC5F51F8CB6B600BF7593 /* CloudNotesService-RemoteNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService-RemoteNote.swift"; sourceTree = "<group>"; };
+		CAECC5F71F8CC04400BF7593 /* CloudNotesService-Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService-Note.swift"; sourceTree = "<group>"; };
+		CAF0D7DE1F90FF9A00090D7A /* ViewController+StatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+StatusIndicator.swift"; sourceTree = "<group>"; };
+		CAF0D7EA1F9100A100090D7A /* ViewController+Synchronization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Synchronization.swift"; sourceTree = "<group>"; };
+		CAF0D7EC1F9109F400090D7A /* CloudNotesService+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudNotesService+Notification.swift"; sourceTree = "<group>"; };
+		CAF104FC1F9CD7DA007BDEAC /* Synchronizer+Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Synchronizer+Auto.swift"; sourceTree = "<group>"; };
+		CAF105081F9CDE0A007BDEAC /* Synchronizer+Instantly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Synchronizer+Instantly.swift"; sourceTree = "<group>"; };
+		CAF2305D1F79711300766B52 /* Synchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
+		CAF47A6720654A24009C2122 /* All.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = All.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF47A6920654A24009C2122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF7AD611F757CB4008B2224 /* CloudNotesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudNotesService.swift; sourceTree = "<group>"; };
+		CAF7AD631F757EB5008B2224 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
+		CAF8006D1F7E711C000E3F50 /* Sequence+mapToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+mapToDictionary.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA11F4D920011FA3006E38F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA11F4DA20011FA3006E38F8 /* Marklight.framework in Frameworks */,
+				CA11F4DB20011FA3006E38F8 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A01F1F6FA0D800E2DFC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB4BC171F8AAD6400EE7539 /* Marklight.framework in Frameworks */,
+				CAC7093A1F84237B00891817 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A0331F6FA0D800E2DFC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A03E1F6FA0D800E2DFC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF47A6420654A24009C2122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA0020FE1F98C58900F6F125 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA7A8E061F90F42A003CC47A /* MyCloudNotes.svg */,
+				CAC4D3D61F8E3EDA0076ED56 /* Error.svg */,
+				CABC42961F89888900F61DA9 /* Star-Empty.svg */,
+				CABC428E1F89888900F61DA9 /* Star-Filled.svg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA0021091F98C5BB00F6F125 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA1A6F0A1F717A4500C348FC /* MyCloudNotes.swift */,
+				CAF7AD611F757CB4008B2224 /* CloudNotesService.swift */,
+				CAECC5F71F8CC04400BF7593 /* CloudNotesService-Note.swift */,
+				CAECC5F51F8CB6B600BF7593 /* CloudNotesService-RemoteNote.swift */,
+				CA81C33B1F78198E00600E39 /* CloudNotesService+ReadableRemoteNote.swift */,
+				CAB771BF1F8CA76C00FFC1BB /* CloudNotesService+AuthenticationAdapter.swift */,
+				CAB771B91F8CA36900FFC1BB /* CloudNotesService+Failure.swift */,
+				CAB771BD1F8CA70700FFC1BB /* CloudNotesService+Request.swift */,
+				CAB771AD1F8CA33800FFC1BB /* CloudNotesService+JsonKey.swift */,
+				CAB771BB1F8CA4E200FFC1BB /* CloudNotesService-Notification.swift */,
+				CAF0D7EC1F9109F400090D7A /* CloudNotesService+Notification.swift */,
+				CAF2305D1F79711300766B52 /* Synchronizer.swift */,
+				CA0B48021F9CFAAC00F6D6CE /* Synchronizer+Sync.swift */,
+				CAF104FC1F9CD7DA007BDEAC /* Synchronizer+Auto.swift */,
+				CAF105081F9CDE0A007BDEAC /* Synchronizer+Instantly.swift */,
+				CAB771C51F8CAF0D00FFC1BB /* Synchronizer+Failure.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA00210A1F98C5E900F6F125 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				CA94A0531F6FA11D00E2DFC0 /* Main.storyboard */,
+				CA5E0A071F7401E300024D41 /* SaveAlert.swift */,
+				CA94A0551F6FA14E00E2DFC0 /* DateTransformer.swift */,
+				CA26E1B11F8A884F00D79D62 /* NSSavePanel+ExportNote.swift */,
+				CA26E1BC1F8A96E600D79D62 /* NSOpenPanel+ImportNote.swift */,
+				CA4E69E220852930003E4481 /* Window.swift */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		CA00210B1F98C62C00F6F125 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA94A0251F6FA0D800E2DFC0 /* AppDelegate.swift */,
+				CA986590207FD5D40087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift */,
+				CAC1FBAE1FAA3313001AFF41 /* WindowController.swift */,
+				CA94A0271F6FA0D800E2DFC0 /* ViewController.swift */,
+				CAE454881F8D10FC006411F6 /* ViewController-Visualisation.swift */,
+				CAF0D7DE1F90FF9A00090D7A /* ViewController+StatusIndicator.swift */,
+				CAF0D7EA1F9100A100090D7A /* ViewController+Synchronization.swift */,
+				CA53E8651F829EC300761948 /* PreferencesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA00210C1F98C64500F6F125 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA94A0291F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodeld */,
+				CA8ECC9E1F7E97740074A83C /* ANote.swift */,
+				CAB33D3D1F6FD94F00838773 /* Note.swift */,
+				CA1ED47A1F87C90200A45FE7 /* Deletion.swift */,
+				CA8ECCA01F7E98030074A83C /* RemoteNote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA00210F1F98C70F00F6F125 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				CAB771C11F8CABC600FFC1BB /* Procedure.swift */,
+				CAB771C31F8CABFA00FFC1BB /* ErrorHandler.swift */,
+				CAF8006D1F7E711C000E3F50 /* Sequence+mapToDictionary.swift */,
+				CA226AA51F75B96A004DF24E /* Dictionary+getter.swift */,
+				CAD95E0C1F71A8D9006E5D61 /* String+firstLine.swift */,
+				CA3AE4D21F80FAB50050A1CB /* Array+Set.swift */,
+				CACECF111F8964CB00D800DB /* Set+includes.swift */,
+				CA26E1BA1F8A8F1F00D79D62 /* Url+HumanReadableString.swift */,
+				CAA266F41F8BE0350050EC3F /* NSLock+perform.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		CA0021101F98C76500F6F125 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CA3AE4DA1F81143C0050A1CB /* NSManagedObjectContext+fetchAll.swift */,
+				CACECF1A1F8971C600D800DB /* NSManagedObjectContext+trySave.swift */,
+				CA59F6452064F803007142A8 /* NSManagedContext+performAndReturn.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CA0021111F98C79500F6F125 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D4A701F8C062D005F723C /* DataRequest+prelude.swift */,
+				CA3428481FAA02420063A1B4 /* DataRequest+JsonObject.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		CA0021121F98C7B300F6F125 /* Marklight */ = {
+			isa = PBXGroup;
+			children = (
+				CA605F1E1F8D2E32008DA3F4 /* MarklightTextProcessor+set.swift */,
+			);
+			path = Marklight;
+			sourceTree = "<group>";
+		};
+		CA0E402E1F7FB2E80049DA45 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				CA260A8C20054CAC00B2A98D /* LICENSE */,
+				CA94A02C1F6FA0D800E2DFC0 /* Assets.xcassets */,
+				CA94A0311F6FA0D800E2DFC0 /* Info.plist */,
+				CAA2E39E205FE58600703C6A /* Info-CustomSSL.plist */,
+				CA94A0571F6FA20000E2DFC0 /* Credits.rtf */,
+				CA52F1B01F98C9E4005CD9E6 /* MyCloudNotes-Bridging-Header.h */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		CA52F1AF1F98C7E2005CD9E6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CAF7AD631F757EB5008B2224 /* UserDefaults+Keys.swift */,
+				CAAEEF6B1F7845A100F145A0 /* PDKeychainBindings+Keys.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CA94A0191F6FA0D800E2DFC0 = {
+			isa = PBXGroup;
+			children = (
+				CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */,
+				CAC709181F84236100891817 /* Alamofire.xcodeproj */,
+				CA99D9F31F7568AE0004875C /* PDKeychainBindingsController */,
+				CA94A0241F6FA0D800E2DFC0 /* MyCloudNotes */,
+				CA94A0391F6FA0D800E2DFC0 /* MyCloudNotesTests */,
+				CA94A0441F6FA0D800E2DFC0 /* MyCloudNotesUITests */,
+				CAF47A6820654A24009C2122 /* All */,
+				CA94A0231F6FA0D800E2DFC0 /* Products */,
+				CAC709391F84237B00891817 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA94A0231F6FA0D800E2DFC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA94A0221F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL).app */,
+				CA94A0361F6FA0D800E2DFC0 /* MyCloudNotesTests.xctest */,
+				CA94A0411F6FA0D800E2DFC0 /* MyCloudNotesUITests.xctest */,
+				CA11F4E720011FA3006E38F8 /* MyCloudNotes.app */,
+				CAF47A6720654A24009C2122 /* All.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA94A0241F6FA0D800E2DFC0 /* MyCloudNotes */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2E39B205FDD2000703C6A /* MyCloudNotes.entitlements */,
+				CA0E402E1F7FB2E80049DA45 /* Misc */,
+				CA00210A1F98C5E900F6F125 /* GUI */,
+				CA00210B1F98C62C00F6F125 /* Controller */,
+				CA00210C1F98C64500F6F125 /* Model */,
+				CA0021091F98C5BB00F6F125 /* Main */,
+				CA52F1AF1F98C7E2005CD9E6 /* Settings */,
+				CA0020FE1F98C58900F6F125 /* Resources */,
+				CA00210F1F98C70F00F6F125 /* Swift */,
+				CA0021101F98C76500F6F125 /* CoreData */,
+				CA0021111F98C79500F6F125 /* Alamofire */,
+				CA0021121F98C7B300F6F125 /* Marklight */,
+			);
+			path = MyCloudNotes;
+			sourceTree = "<group>";
+		};
+		CA94A0391F6FA0D800E2DFC0 /* MyCloudNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA94A03A1F6FA0D800E2DFC0 /* MyCloudNotesTests.swift */,
+				CA94A03C1F6FA0D800E2DFC0 /* Info.plist */,
+			);
+			path = MyCloudNotesTests;
+			sourceTree = "<group>";
+		};
+		CA94A0441F6FA0D800E2DFC0 /* MyCloudNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA94A0451F6FA0D800E2DFC0 /* MyCloudNotesUITests.swift */,
+				CA94A0471F6FA0D800E2DFC0 /* Info.plist */,
+			);
+			path = MyCloudNotesUITests;
+			sourceTree = "<group>";
+		};
+		CA99D9F31F7568AE0004875C /* PDKeychainBindingsController */ = {
+			isa = PBXGroup;
+			children = (
+				CA99D9F41F7568AE0004875C /* PDKeychainBindings.h */,
+				CA99D9F51F7568AE0004875C /* PDKeychainBindings.m */,
+				CA99D9F61F7568AE0004875C /* PDKeychainBindingsController.h */,
+				CA99D9F71F7568AE0004875C /* PDKeychainBindingsController.m */,
+			);
+			name = PDKeychainBindingsController;
+			path = Libraries/PDKeychainBindingsController/PDKeychainBindingsController;
+			sourceTree = "<group>";
+		};
+		CAB4BC001F8AAD4000EE7539 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4BC0E1F8AAD4000EE7539 /* Marklight.framework */,
+				CAB4BC101F8AAD4000EE7539 /* MarklightTests.xctest */,
+				CAB4BC121F8AAD4000EE7539 /* Marklight.framework */,
+				CAB4BC141F8AAD4000EE7539 /* Marklight macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC709191F84236100891817 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7092A1F84236100891817 /* Alamofire.framework */,
+				CAC7092C1F84236100891817 /* Alamofire iOS Tests.xctest */,
+				CAC7092E1F84236100891817 /* Alamofire.framework */,
+				CAC709301F84236100891817 /* Alamofire macOS Tests.xctest */,
+				CAC709321F84236100891817 /* Alamofire.framework */,
+				CAC709341F84236100891817 /* Alamofire tvOS Tests.xctest */,
+				CAC709361F84236100891817 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC709391F84237B00891817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CABC01511F97B274001CD790 /* CoreSpotlight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAF47A6820654A24009C2122 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				CAF47A6920654A24009C2122 /* Info.plist */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA11F4A120011FA3006E38F8 /* MyCloudNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA11F4E420011FA3006E38F8 /* Build configuration list for PBXNativeTarget "MyCloudNotes" */;
+			buildPhases = (
+				CA11F4A620011FA3006E38F8 /* Sources */,
+				CA11F4D920011FA3006E38F8 /* Frameworks */,
+				CA11F4DC20011FA3006E38F8 /* Resources */,
+				CA11F4E020011FA3006E38F8 /* Set Version and Build in Info.plist */,
+				CA11F4E120011FA3006E38F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA11F4A220011FA3006E38F8 /* PBXTargetDependency */,
+				CA11F4A420011FA3006E38F8 /* PBXTargetDependency */,
+			);
+			name = MyCloudNotes;
+			productName = MyCloudNotes;
+			productReference = CA11F4E720011FA3006E38F8 /* MyCloudNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA94A0211F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA94A04A1F6FA0D800E2DFC0 /* Build configuration list for PBXNativeTarget "MyCloudNotes (CustomSSL)" */;
+			buildPhases = (
+				CA94A01E1F6FA0D800E2DFC0 /* Sources */,
+				CA94A01F1F6FA0D800E2DFC0 /* Frameworks */,
+				CA94A0201F6FA0D800E2DFC0 /* Resources */,
+				CABD76331F97CEA300C45325 /* Set Version and Build in Info.plist */,
+				CA6887D81F756460009E2B11 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAB4BC161F8AAD5900EE7539 /* PBXTargetDependency */,
+				CAC709381F84237200891817 /* PBXTargetDependency */,
+			);
+			name = "MyCloudNotes (CustomSSL)";
+			productName = MyCloudNotes;
+			productReference = CA94A0221F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL).app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA94A0351F6FA0D800E2DFC0 /* MyCloudNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA94A04D1F6FA0D800E2DFC0 /* Build configuration list for PBXNativeTarget "MyCloudNotesTests" */;
+			buildPhases = (
+				CA94A0321F6FA0D800E2DFC0 /* Sources */,
+				CA94A0331F6FA0D800E2DFC0 /* Frameworks */,
+				CA94A0341F6FA0D800E2DFC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA94A0381F6FA0D800E2DFC0 /* PBXTargetDependency */,
+			);
+			name = MyCloudNotesTests;
+			productName = MyCloudNotesTests;
+			productReference = CA94A0361F6FA0D800E2DFC0 /* MyCloudNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA94A0401F6FA0D800E2DFC0 /* MyCloudNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA94A0501F6FA0D800E2DFC0 /* Build configuration list for PBXNativeTarget "MyCloudNotesUITests" */;
+			buildPhases = (
+				CA94A03D1F6FA0D800E2DFC0 /* Sources */,
+				CA94A03E1F6FA0D800E2DFC0 /* Frameworks */,
+				CA94A03F1F6FA0D800E2DFC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA94A0431F6FA0D800E2DFC0 /* PBXTargetDependency */,
+			);
+			name = MyCloudNotesUITests;
+			productName = MyCloudNotesUITests;
+			productReference = CA94A0411F6FA0D800E2DFC0 /* MyCloudNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CAF47A6620654A24009C2122 /* All */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF47A6A20654A24009C2122 /* Build configuration list for PBXNativeTarget "All" */;
+			buildPhases = (
+				CAF47A6320654A24009C2122 /* Sources */,
+				CAF47A6420654A24009C2122 /* Frameworks */,
+				CAF47A6520654A24009C2122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAF47A6E20654A31009C2122 /* PBXTargetDependency */,
+				CAF47A7020654A31009C2122 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+			productReference = CAF47A6720654A24009C2122 /* All.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA94A01A1F6FA0D800E2DFC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Frank Schuster";
+				TargetAttributes = {
+					CA11F4A120011FA3006E38F8 = {
+						DevelopmentTeam = RM8N996XVM;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					CA94A0211F6FA0D800E2DFC0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					CA94A0351F6FA0D800E2DFC0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA94A0211F6FA0D800E2DFC0;
+					};
+					CA94A0401F6FA0D800E2DFC0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA94A0211F6FA0D800E2DFC0;
+					};
+					CAF47A6620654A24009C2122 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA94A01D1F6FA0D800E2DFC0 /* Build configuration list for PBXProject "MyCloudNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA94A0191F6FA0D800E2DFC0;
+			productRefGroup = CA94A0231F6FA0D800E2DFC0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CAC709191F84236100891817 /* Products */;
+					ProjectRef = CAC709181F84236100891817 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = CAB4BC001F8AAD4000EE7539 /* Products */;
+					ProjectRef = CAB4BBFF1F8AAD4000EE7539 /* Marklight.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CA94A0211F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL) */,
+				CA11F4A120011FA3006E38F8 /* MyCloudNotes */,
+				CA94A0351F6FA0D800E2DFC0 /* MyCloudNotesTests */,
+				CA94A0401F6FA0D800E2DFC0 /* MyCloudNotesUITests */,
+				CAF47A6620654A24009C2122 /* All */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CAB4BC0E1F8AAD4000EE7539 /* Marklight.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Marklight.framework;
+			remoteRef = CAB4BC0D1F8AAD4000EE7539 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAB4BC101F8AAD4000EE7539 /* MarklightTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MarklightTests.xctest;
+			remoteRef = CAB4BC0F1F8AAD4000EE7539 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAB4BC121F8AAD4000EE7539 /* Marklight.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Marklight.framework;
+			remoteRef = CAB4BC111F8AAD4000EE7539 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAB4BC141F8AAD4000EE7539 /* Marklight macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Marklight macOSTests.xctest";
+			remoteRef = CAB4BC131F8AAD4000EE7539 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC7092A1F84236100891817 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CAC709291F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC7092C1F84236100891817 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = CAC7092B1F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC7092E1F84236100891817 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CAC7092D1F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC709301F84236100891817 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = CAC7092F1F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC709321F84236100891817 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CAC709311F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC709341F84236100891817 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = CAC709331F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAC709361F84236100891817 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CAC709351F84236100891817 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA11F4DC20011FA3006E38F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA11F4DD20011FA3006E38F8 /* Assets.xcassets in Resources */,
+				CA11F4DE20011FA3006E38F8 /* Credits.rtf in Resources */,
+				CA11F4DF20011FA3006E38F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A0201F6FA0D800E2DFC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA94A02D1F6FA0D800E2DFC0 /* Assets.xcassets in Resources */,
+				CA94A0581F6FA20000E2DFC0 /* Credits.rtf in Resources */,
+				CA94A0541F6FA11D00E2DFC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A0341F6FA0D800E2DFC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A03F1F6FA0D800E2DFC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF47A6520654A24009C2122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA11F4E020011FA3006E38F8 /* Set Version and Build in Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version and Build in Info.plist";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "#\n# Set the \"short version\" and \"long version\" of the Info.plist.\n#\n# - The short version is the latest annotated-tag (git)\n# - The long version is a timestampe and the hash of the latest commit (git)\n#\n\n#\n# Short Version\n#\n\n# Get the latest annotated tag in the current branch\ntag=$(git describe --abbrev=0)\n\n# Remove \"v\"\ntag=\"${tag#*v}\"\n\nshort_version=${tag}\n\n#\n# Long Version\n#\n\n# Get the date and minute\ntimestamp=$(date +\"%y%m%d%M\")\n\n# Get the hash of the latest commit in the current branch\nhash=$(git rev-parse HEAD)\n\n# Use only the first 7 digits of the hash\nhash=${hash:0:7}\n\n# Convert the hash into a decimal number\nhash=$((16#${hash}))\n\n#\nlong_version=${timestamp}${hash}\n\n\n# The files to change\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\n# Change Info.plist\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\nif [ -f \"$plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${short_version}\" \"$plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${long_version}\" \"$plist\"\nfi\ndone\n";
+			showEnvVarsInLog = 0;
+		};
+		CABD76331F97CEA300C45325 /* Set Version and Build in Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version and Build in Info.plist";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "#\n# Set the \"short version\" and \"long version\" of the Info.plist.\n#\n# - The short version is the latest annotated-tag (git)\n# - The long version is a timestampe and the hash of the latest commit (git)\n#\n\n#\n# Short Version\n#\n\n# Get the latest annotated tag in the current branch\ntag=$(git describe --abbrev=0)\n\n# Remove \"v\"\ntag=\"${tag#*v}\"\n\nshort_version=${tag}\n\n#\n# Long Version\n#\n\n# Get the date and minute\ntimestamp=$(date +\"%y%m%d%M\")\n\n# Get the hash of the latest commit in the current branch\nhash=$(git rev-parse HEAD)\n\n# Use only the first 7 digits of the hash\nhash=${hash:0:7}\n\n# Convert the hash into a decimal number\nhash=$((16#${hash}))\n\n#\nlong_version=${timestamp}${hash}\n\n\n# The files to change\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\n# Change Info.plist\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\nif [ -f \"$plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${short_version}\" \"$plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${long_version}\" \"$plist\"\nfi\ndone\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA11F4A620011FA3006E38F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA11F4A720011FA3006E38F8 /* UserDefaults+Keys.swift in Sources */,
+				CA11F4A820011FA3006E38F8 /* RemoteNote.swift in Sources */,
+				CA986591207FD5D40087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift in Sources */,
+				CA11F4A920011FA3006E38F8 /* CloudNotesService-Notification.swift in Sources */,
+				CA11F4AA20011FA3006E38F8 /* Note.swift in Sources */,
+				CA11F4AB20011FA3006E38F8 /* ANote.swift in Sources */,
+				CA11F4AC20011FA3006E38F8 /* NSManagedObjectContext+trySave.swift in Sources */,
+				CA11F4AD20011FA3006E38F8 /* CloudNotesService.swift in Sources */,
+				CA11F4AE20011FA3006E38F8 /* Synchronizer+Instantly.swift in Sources */,
+				CA11F4AF20011FA3006E38F8 /* DataRequest+JsonObject.swift in Sources */,
+				CA11F4B020011FA3006E38F8 /* ErrorHandler.swift in Sources */,
+				CA11F4B120011FA3006E38F8 /* SaveAlert.swift in Sources */,
+				CA11F4B220011FA3006E38F8 /* ViewController+StatusIndicator.swift in Sources */,
+				CA11F4B320011FA3006E38F8 /* NSManagedObjectContext+fetchAll.swift in Sources */,
+				CA11F4B420011FA3006E38F8 /* ViewController-Visualisation.swift in Sources */,
+				CA11F4B520011FA3006E38F8 /* CloudNotesService+AuthenticationAdapter.swift in Sources */,
+				CA11F4B620011FA3006E38F8 /* PDKeychainBindings+Keys.swift in Sources */,
+				CA11F4B720011FA3006E38F8 /* Synchronizer.swift in Sources */,
+				CA11F4B820011FA3006E38F8 /* Procedure.swift in Sources */,
+				CA11F4B920011FA3006E38F8 /* CloudNotesService+Request.swift in Sources */,
+				CA11F4BA20011FA3006E38F8 /* CloudNotesService-Note.swift in Sources */,
+				CA11F4BB20011FA3006E38F8 /* CloudNotesService+Failure.swift in Sources */,
+				CA11F4BC20011FA3006E38F8 /* CloudNotesService+JsonKey.swift in Sources */,
+				CA11F4BD20011FA3006E38F8 /* Deletion.swift in Sources */,
+				CA11F4BE20011FA3006E38F8 /* Synchronizer+Failure.swift in Sources */,
+				CA11F4BF20011FA3006E38F8 /* MyCloudNotes.swift in Sources */,
+				CA11F4C020011FA3006E38F8 /* Sequence+mapToDictionary.swift in Sources */,
+				CA11F4C120011FA3006E38F8 /* Set+includes.swift in Sources */,
+				CA11F4C220011FA3006E38F8 /* PDKeychainBindings.m in Sources */,
+				CA11F4C320011FA3006E38F8 /* CloudNotesService-RemoteNote.swift in Sources */,
+				CA11F4C420011FA3006E38F8 /* Synchronizer+Auto.swift in Sources */,
+				CA11F4C520011FA3006E38F8 /* MyCloudNotes.xcdatamodeld in Sources */,
+				CA11F4C620011FA3006E38F8 /* WindowController.swift in Sources */,
+				CA11F4C720011FA3006E38F8 /* Array+Set.swift in Sources */,
+				CA11F4C820011FA3006E38F8 /* PreferencesController.swift in Sources */,
+				CA11F4C920011FA3006E38F8 /* CloudNotesService+Notification.swift in Sources */,
+				CA11F4CA20011FA3006E38F8 /* Synchronizer+Sync.swift in Sources */,
+				CA11F4CB20011FA3006E38F8 /* Url+HumanReadableString.swift in Sources */,
+				CA11F4CC20011FA3006E38F8 /* MarklightTextProcessor+set.swift in Sources */,
+				CA11F4CD20011FA3006E38F8 /* PDKeychainBindingsController.m in Sources */,
+				CA11F4CE20011FA3006E38F8 /* Dictionary+getter.swift in Sources */,
+				CA11F4CF20011FA3006E38F8 /* DateTransformer.swift in Sources */,
+				CA11F4D020011FA3006E38F8 /* ViewController.swift in Sources */,
+				CA11F4D120011FA3006E38F8 /* ViewController+Synchronization.swift in Sources */,
+				CA59F6462064F803007142A8 /* NSManagedContext+performAndReturn.swift in Sources */,
+				CA11F4D220011FA3006E38F8 /* NSSavePanel+ExportNote.swift in Sources */,
+				CA11F4D320011FA3006E38F8 /* DataRequest+prelude.swift in Sources */,
+				CA11F4D420011FA3006E38F8 /* NSLock+perform.swift in Sources */,
+				CA4E69E320852930003E4481 /* Window.swift in Sources */,
+				CA11F4D520011FA3006E38F8 /* AppDelegate.swift in Sources */,
+				CA11F4D620011FA3006E38F8 /* String+firstLine.swift in Sources */,
+				CA11F4D720011FA3006E38F8 /* NSOpenPanel+ImportNote.swift in Sources */,
+				CA11F4D820011FA3006E38F8 /* CloudNotesService+ReadableRemoteNote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A01E1F6FA0D800E2DFC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA59F6512064F878007142A8 /* NSManagedContext+performAndReturn.swift in Sources */,
+				CAF7AD641F757EB5008B2224 /* UserDefaults+Keys.swift in Sources */,
+				CA8ECCA11F7E98030074A83C /* RemoteNote.swift in Sources */,
+				CAB771BC1F8CA4E200FFC1BB /* CloudNotesService-Notification.swift in Sources */,
+				CAB33D3E1F6FD94F00838773 /* Note.swift in Sources */,
+				CA8ECC9F1F7E97740074A83C /* ANote.swift in Sources */,
+				CACECF1B1F8971C600D800DB /* NSManagedObjectContext+trySave.swift in Sources */,
+				CA98659C207FD9D60087DED9 /* AppDelegate+StatusOfSynchronizationMenuItem.swift in Sources */,
+				CAF7AD621F757CB4008B2224 /* CloudNotesService.swift in Sources */,
+				CAF105091F9CDE0A007BDEAC /* Synchronizer+Instantly.swift in Sources */,
+				CA3428491FAA02420063A1B4 /* DataRequest+JsonObject.swift in Sources */,
+				CAB771C41F8CABFA00FFC1BB /* ErrorHandler.swift in Sources */,
+				CA5E0A081F7401E300024D41 /* SaveAlert.swift in Sources */,
+				CAF0D7DF1F90FF9A00090D7A /* ViewController+StatusIndicator.swift in Sources */,
+				CA3AE4DB1F81143C0050A1CB /* NSManagedObjectContext+fetchAll.swift in Sources */,
+				CAE454891F8D10FC006411F6 /* ViewController-Visualisation.swift in Sources */,
+				CAB771C01F8CA76C00FFC1BB /* CloudNotesService+AuthenticationAdapter.swift in Sources */,
+				CAAEEF6C1F7845A100F145A0 /* PDKeychainBindings+Keys.swift in Sources */,
+				CAF2305E1F79711300766B52 /* Synchronizer.swift in Sources */,
+				CAB771C21F8CABC600FFC1BB /* Procedure.swift in Sources */,
+				CAB771BE1F8CA70700FFC1BB /* CloudNotesService+Request.swift in Sources */,
+				CAECC5F81F8CC04400BF7593 /* CloudNotesService-Note.swift in Sources */,
+				CAB771BA1F8CA36900FFC1BB /* CloudNotesService+Failure.swift in Sources */,
+				CAB771AE1F8CA33800FFC1BB /* CloudNotesService+JsonKey.swift in Sources */,
+				CA1ED47B1F87C90200A45FE7 /* Deletion.swift in Sources */,
+				CAB771C61F8CAF0D00FFC1BB /* Synchronizer+Failure.swift in Sources */,
+				CA1A6F0B1F717A4500C348FC /* MyCloudNotes.swift in Sources */,
+				CAF8006E1F7E711C000E3F50 /* Sequence+mapToDictionary.swift in Sources */,
+				CACECF121F8964CB00D800DB /* Set+includes.swift in Sources */,
+				CA99D9F81F7568AE0004875C /* PDKeychainBindings.m in Sources */,
+				CAECC5F61F8CB6B600BF7593 /* CloudNotesService-RemoteNote.swift in Sources */,
+				CAF104FD1F9CD7DA007BDEAC /* Synchronizer+Auto.swift in Sources */,
+				CA94A02B1F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodeld in Sources */,
+				CAC1FBAF1FAA3313001AFF41 /* WindowController.swift in Sources */,
+				CA3AE4D31F80FAB50050A1CB /* Array+Set.swift in Sources */,
+				CA53E8661F829EC300761948 /* PreferencesController.swift in Sources */,
+				CAF0D7ED1F9109F400090D7A /* CloudNotesService+Notification.swift in Sources */,
+				CA0B48031F9CFAAC00F6D6CE /* Synchronizer+Sync.swift in Sources */,
+				CA26E1BB1F8A8F1F00D79D62 /* Url+HumanReadableString.swift in Sources */,
+				CA605F1F1F8D2E32008DA3F4 /* MarklightTextProcessor+set.swift in Sources */,
+				CA99D9F91F7568AE0004875C /* PDKeychainBindingsController.m in Sources */,
+				CA226AA61F75B96A004DF24E /* Dictionary+getter.swift in Sources */,
+				CA94A0561F6FA14E00E2DFC0 /* DateTransformer.swift in Sources */,
+				CA94A0281F6FA0D800E2DFC0 /* ViewController.swift in Sources */,
+				CAF0D7EB1F9100A100090D7A /* ViewController+Synchronization.swift in Sources */,
+				CA26E1B21F8A884F00D79D62 /* NSSavePanel+ExportNote.swift in Sources */,
+				CA3D4A711F8C062D005F723C /* DataRequest+prelude.swift in Sources */,
+				CAA266F51F8BE0350050EC3F /* NSLock+perform.swift in Sources */,
+				CA94A0261F6FA0D800E2DFC0 /* AppDelegate.swift in Sources */,
+				CAD95E0D1F71A8D9006E5D61 /* String+firstLine.swift in Sources */,
+				CA26E1BD1F8A96E600D79D62 /* NSOpenPanel+ImportNote.swift in Sources */,
+				CA81C33C1F78198E00600E39 /* CloudNotesService+ReadableRemoteNote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A0321F6FA0D800E2DFC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA94A03B1F6FA0D800E2DFC0 /* MyCloudNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA94A03D1F6FA0D800E2DFC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA94A0461F6FA0D800E2DFC0 /* MyCloudNotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF47A6320654A24009C2122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA11F4A220011FA3006E38F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Marklight macOS";
+			targetProxy = CA11F4A320011FA3006E38F8 /* PBXContainerItemProxy */;
+		};
+		CA11F4A420011FA3006E38F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire macOS";
+			targetProxy = CA11F4A520011FA3006E38F8 /* PBXContainerItemProxy */;
+		};
+		CA94A0381F6FA0D800E2DFC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA94A0211F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL) */;
+			targetProxy = CA94A0371F6FA0D800E2DFC0 /* PBXContainerItemProxy */;
+		};
+		CA94A0431F6FA0D800E2DFC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA94A0211F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL) */;
+			targetProxy = CA94A0421F6FA0D800E2DFC0 /* PBXContainerItemProxy */;
+		};
+		CAB4BC161F8AAD5900EE7539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Marklight macOS";
+			targetProxy = CAB4BC151F8AAD5900EE7539 /* PBXContainerItemProxy */;
+		};
+		CAC709381F84237200891817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire macOS";
+			targetProxy = CAC709371F84237200891817 /* PBXContainerItemProxy */;
+		};
+		CAF47A6E20654A31009C2122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA94A0211F6FA0D800E2DFC0 /* MyCloudNotes (CustomSSL) */;
+			targetProxy = CAF47A6D20654A31009C2122 /* PBXContainerItemProxy */;
+		};
+		CAF47A7020654A31009C2122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA11F4A120011FA3006E38F8 /* MyCloudNotes */;
+			targetProxy = CAF47A6F20654A31009C2122 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA11F4E520011FA3006E38F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyCloudNotes/MyCloudNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RM8N996XVM;
+				INFOPLIST_FILE = "$(SRCROOT)/MyCloudNotes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCloudNotes/MyCloudNotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CA11F4E620011FA3006E38F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyCloudNotes/MyCloudNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RM8N996XVM;
+				INFOPLIST_FILE = "$(SRCROOT)/MyCloudNotes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCloudNotes/MyCloudNotes-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		CA94A0481F6FA0D800E2DFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA94A0491F6FA0D800E2DFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		CA94A04B1F6FA0D800E2DFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MyCloudNotes/Info-CustomSSL.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCloudNotes/MyCloudNotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CA94A04C1F6FA0D800E2DFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MyCloudNotes/Info-CustomSSL.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCloudNotes/MyCloudNotes-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		CA94A04E1F6FA0D800E2DFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyCloudNotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCloudNotes.app/Contents/MacOS/MyCloudNotes";
+			};
+			name = Debug;
+		};
+		CA94A04F1F6FA0D800E2DFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyCloudNotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCloudNotes.app/Contents/MacOS/MyCloudNotes";
+			};
+			name = Release;
+		};
+		CA94A0511F6FA0D800E2DFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyCloudNotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyCloudNotes;
+			};
+			name = Debug;
+		};
+		CA94A0521F6FA0D800E2DFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyCloudNotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.MyCloudNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyCloudNotes;
+			};
+			name = Release;
+		};
+		CAF47A6B20654A24009C2122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = All/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.All;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CAF47A6C20654A24009C2122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = All/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pullus.All;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA11F4E420011FA3006E38F8 /* Build configuration list for PBXNativeTarget "MyCloudNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA11F4E520011FA3006E38F8 /* Debug */,
+				CA11F4E620011FA3006E38F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA94A01D1F6FA0D800E2DFC0 /* Build configuration list for PBXProject "MyCloudNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA94A0481F6FA0D800E2DFC0 /* Debug */,
+				CA94A0491F6FA0D800E2DFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA94A04A1F6FA0D800E2DFC0 /* Build configuration list for PBXNativeTarget "MyCloudNotes (CustomSSL)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA94A04B1F6FA0D800E2DFC0 /* Debug */,
+				CA94A04C1F6FA0D800E2DFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA94A04D1F6FA0D800E2DFC0 /* Build configuration list for PBXNativeTarget "MyCloudNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA94A04E1F6FA0D800E2DFC0 /* Debug */,
+				CA94A04F1F6FA0D800E2DFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA94A0501F6FA0D800E2DFC0 /* Build configuration list for PBXNativeTarget "MyCloudNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA94A0511F6FA0D800E2DFC0 /* Debug */,
+				CA94A0521F6FA0D800E2DFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF47A6A20654A24009C2122 /* Build configuration list for PBXNativeTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF47A6B20654A24009C2122 /* Debug */,
+				CAF47A6C20654A24009C2122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA94A0291F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA94A02A1F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodel */,
+			);
+			currentVersion = CA94A02A1F6FA0D800E2DFC0 /* MyCloudNotes.xcdatamodel */;
+			path = MyCloudNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CA94A01A1F6FA0D800E2DFC0 /* Project object */;
+}

@@ -1,0 +1,1 @@
+A macOS-client for the notes-app of Nextcloud (https://nextcloud.com) and OwnCloud (https://owncloud.org).
