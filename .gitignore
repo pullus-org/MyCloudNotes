@@ -1,0 +1,11 @@
+# Mac OS
+.DS_Store
+
+# Unix
+*~
+
+# Ignore folders
+/-*
+
+# Xcode
+xcuserdata/
